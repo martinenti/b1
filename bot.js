@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '+'
+const prefix = '_'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`+help`,"http://twitch.tv/S-F")
+client.user.setGame(`_bc RGM CLAN`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -60,7 +60,7 @@ client.on('message',async message => {
         message.guild.members.forEach(member => {
           msg.edit(':regional_indicator_b::regional_indicator_c:| **جاري الارسال**');
           collected.first().delete();
-          member.send(`${thisMessage}\n\n${member} ,\nتم الارسال من : ${message.guild.name}\n تم الارسال بواسطة : ${message.author.tag}`);
+          member.send(`${thisMessage}\n\n${member} ,\nتم الارسال من سيرفر  : ${message.guild.name}\n تم الارسال بواسطة الاونر : ${message.author.tag}`);
         });
         }
       });

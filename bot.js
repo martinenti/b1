@@ -56,7 +56,7 @@ client.user.setGame(`_bc RGM CLAN `,"http://twitch.tv/S-F")
        .addField('Server', message.guild.name)
        .addField('Sender', message.author.username)
        .addField('Message', args)
-       .setImage("هنا حط رابط الصوره اللي بتظهر")
+       .setImage("https://cdn.discordapp.com/attachments/466685842833014789/466696993075494913/image.jpg")
        .setThumbnail(message.author.avatarURL)
        .setFooter(copy, client.user.avatarURL);
     m.send({ embed: bc })

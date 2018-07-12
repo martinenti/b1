@@ -73,5 +73,25 @@ client.user.setGame(`_bc RGM CLAN `,"http://twitch.tv/S-F")
 
 
 
+const devs = ['466985110491627521'];
+const adminprefix = "_";
+client.on('message', message => {
+    var t3gb = message.content.split(` `).slice(1).join(' ');
+      if (!devs.includes(message.author.id)) return;
+      
+    if (message.content.startsWith(adminprefix + 'name-bot')) {
+  client.user.setUsername(t3gb);
+      message.channel.sendMessage(`**${t3gb}** : تم تغير الأسم`)
+} else
+   if (message.content.startsWith(adminprefix + 'avatar-bot')) {
+  client.user.setAvatar(t3gb);
+    message.channel.sendMessage(`**${t3gb}** : تم تغير صورة البوت`)
+}
+});
+
+
+
+
+
 
 	client.login(process.env.BOT_TOKEN);

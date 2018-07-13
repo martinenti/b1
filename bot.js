@@ -76,7 +76,7 @@ client.user.setGame(`_bc RGM CLAN `,"http://twitch.tv/S-F")
 
 
 client.on('message', function(message) {
-	const myID = "466985110491627521";
+	const myID = "257147010488991744";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
 		        if(message.author.id !== myID) return;
